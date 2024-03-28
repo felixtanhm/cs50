@@ -8,13 +8,11 @@ def main():
     if num >= 18 and num <= 19:
       print("dinner time")
 
-
 def convert(time):
     array = time.split(":")
     hour = float(array[0])
     min = float(array[1]) / 60
     return hour + min
-
 
 if __name__ == "__main__":
     main()
