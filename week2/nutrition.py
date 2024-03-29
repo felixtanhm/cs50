@@ -21,3 +21,9 @@ fruits = {
   "watermelon": 80
 }
 
+item = input("Item: ").strip().lower()
+calories = fruits.get(item)
+if calories: 
+  print(calories)
+else: 
+  print(end="")
