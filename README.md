@@ -6,7 +6,7 @@ This repository serves as a compilation of the solutions I've submitted for Harv
 
 CS50x is Harvard's original course and teaches basic programming fundamentals using C.
 
-I recall very vividly the time when I watched the first lecture of this course, at a time when I had been learning Javascript for a month or 2. I came away all **smiles** and SO excited to learn more about programming. David Malan explained the simple fundamentals of bits and bytes so clearly that I could understand it immediately. What once seemed arcane and beyond the realm of my perception was suddenly so simple and relatable. I remember still, how happy I felt; oh jubilee!
+I recall very vividly the time when I watched the first lecture of this course, at a time when I had been learning Javascript for a month or 2. I came away all **smiles** and **so** excited to learn more about programming. David Malan explained the simple fundamentals of bits and bytes so clearly that I could understand it immediately. What once seemed arcane and beyond the realm of my perception was suddenly so simple and relatable. I remember still, how happy I felt; oh jubilee!
 
 I watched the first 3 weeks worth of lectures, and resumed my studies in Javascript. I was happy, but I wanted to focus and not be derailed. 2 months later, I would join [42's Piscine](https://github.com/felixtanhm/42-piscine), where I would once again be reacquainted with the C language.
 
