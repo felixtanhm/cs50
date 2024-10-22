@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h3>{{ stock['name'] }} ({{ stock['symbol'] }})</h3>
+    <p>Price: ${{ "%.2f"|format(stock['price']) }}</p>
+    <a href="/quote" class="btn btn-primary">Look Up Another Stock</a>
+{% endblock %}

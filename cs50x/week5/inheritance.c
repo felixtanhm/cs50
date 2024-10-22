@@ -1,4 +1,5 @@
 // Simulate genetic inheritance of blood type
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,13 +15,31 @@ typedef struct person
 const int GENERATIONS = 3;
 const int INDENT_LENGTH = 4;
 
+person *create_family(int generations);
+void print_family(person *p, int generation);
+void free_family(person *p);
+char random_allele();
+
+int main(void)
+{
+    // Seed random number generator
+    srand(time(0));
+
+    // Create a new family with three generations
+    person *p = create_family(GENERATIONS);
+
+    // Print family tree of blood types
+    print_family(p, 0);
+
+    // Free memory
+    free_family(p);
+}
 
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
     // TODO: Allocate memory for new person
     person *child = malloc(sizeof(person));
-
     // If there are still generations left to create
     if (generations > 1)
     {
@@ -57,11 +76,9 @@ void free_family(person *p)
     // TODO: Handle base case
     if (p == NULL)
         return;
-
     // TODO: Free parents recursively
     free_family(p->parents[0]);
     free_family(p->parents[1]);
-
     // TODO: Free child
     free(p);
 }
@@ -71,7 +88,9 @@ void print_family(person *p, int generation)
 {
     // Handle base case
     if (p == NULL)
+    {
         return;
+    }
 
     // Print indentation
     for (int i = 0; i < generation * INDENT_LENGTH; i++)
@@ -109,26 +128,16 @@ void print_family(person *p, int generation)
 char random_allele()
 {
     int r = rand() % 3;
-
     if (r == 0)
+    {
         return 'A';
+    }
     else if (r == 1)
+    {
         return 'B';
+    }
     else
+    {
         return 'O';
-}
-
-int main(void)
-{
-    // Seed random number generator
-    srand(time(0));
-
-    // Create a new family with three generations
-    person *p = create_family(GENERATIONS);
-
-    // Print family tree of blood types
-    print_family(p, 0);
-
-    // Free memory
-    free_family(p);
+    }
 }

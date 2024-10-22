@@ -1,0 +1,9 @@
+HTML Tags:
+head, meta, title, link, body, nav, a, div, ul, li, header, main, form, label, input, button, footer, h1, p,
+
+CSS Properties:
+font-family, background-color, padding, color, display, flex-direction, justify-content, align-items, height, text-align, margin-bottom, and more!
+
+JS:
+Simulate a fake form submission
+Github repo: https://github.com/felixtanhm/my-odin-projects/tree/main/full-stack-javascript/01-sign-up-form

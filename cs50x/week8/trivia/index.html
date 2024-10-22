@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function submit1(answer) {
+                const correctAnswer = "CS50X"
+                const resultText = document.getElementById("result1")
+                const button = document.getElementById(answer)
+
+                if(answer === correctAnswer) {
+                    resultText.textContent = "Correct!"
+                    button.style.backgroundColor = "green"
+                }
+                else {
+                    resultText.textContent = "Incorrect!"
+                    button.style.backgroundColor = "red"
+                }
+            }
+
+            function submit2() {
+                const correctAnswer = "david"
+                const inputField = document.getElementById("part2")
+                const resultText = document.getElementById("result2")
+                const response = inputField.value.trim().toLowerCase()
+
+                if(response === correctAnswer) {
+                    resultText.textContent = "Correct!"
+                    inputField.style.backgroundColor = "green"
+                }
+                else {
+                    resultText.textContent = "Incorrect!"
+                    inputField.style.backgroundColor = "red"
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the name of this course?</h3>
+                <button onclick="submit1('CS50X')" id="CS50X">CS50X</button>
+                <button onclick="submit1('CS50Y')" id="CS50Y">CS50Y</button>
+                <button onclick="submit1('CS50Z')" id="CS50Z">CS50Z</button>
+                <p id="result1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>What is the name of the course instructor?</h3>
+                 <input type="text" id="part2" placeholder="Type name here">
+                 <button onclick="submit2()">Submit</button>
+                 <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>

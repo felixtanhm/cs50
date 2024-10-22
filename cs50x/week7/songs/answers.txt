@@ -1,0 +1,6 @@
+To calculate aura, an average of song attributes (danceability, energy, valence, tempo, etc) can be used.
+
+However, this method of calculation ignores certain biases. These include:
+- Duration, where only songs from 2018 are included. The outcome might be skewed based on what is popular during 2018
+- Mood, listeners might have preferences for song types which an average would ignore depending on mood. Perhaps fast songs for a work out, or slow songs for relaxation. An average would instead produce mid tier songs in that case.
+
